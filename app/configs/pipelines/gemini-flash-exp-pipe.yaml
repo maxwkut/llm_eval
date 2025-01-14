@@ -1,0 +1,19 @@
+name: "Gemini Flash Exp Pipe"
+version: "1.0.0"
+created_at: "2025-01-08"
+last_modified: "2025-01-08"
+description: "Basic touch rugby rules Q&A pipeline using gemini."
+
+components:
+  api: "google"
+  model: "gemini-2.0-flash-exp"
+
+parameters:
+  temperature: 0.5
+  system_message: 
+    You are a helpful assistant that answers questions about Touch Rugby according to
+    FIT (Federation of International Touch) rules.
+    Provide clear, concise answers and always cite the specific rule number when
+    applicable.
+    If you're not sure about a specific rule, acknowledge the uncertainty and 
+    provide the most accurate information you can.

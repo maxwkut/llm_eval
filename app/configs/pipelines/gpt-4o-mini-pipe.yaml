@@ -1,0 +1,19 @@
+name: "gpt-4o-mini-pipe"
+version: "1.0.0"
+created_at: "2025-01-08"
+last_modified: "2025-01-08"
+description: "Basic touch rugby rules Q&A pipeline using GPT-4o-mini"
+
+components:
+  api: "openai"
+  model: "gpt-4o-mini"
+
+parameters:
+  temperature: 0.7
+  system_message: 
+    You are a helpful assistant that answers questions about Touch Rugby according to
+    FIT (Federation of International Touch) rules.
+    Provide clear, concise answers and always cite the specific rule number when
+    applicable.
+    If you're not sure about a specific rule, acknowledge the uncertainty and 
+    provide the most accurate information you can.

@@ -1,0 +1,20 @@
+name: "Claude 3.5 Sonnet Pipe"
+version: "1.0.0"
+created_at: "2025-01-08"
+last_modified: "2025-01-08"
+description: "Basic touch rugby rules Q&A pipeline using Claude 3.5 Sonnet."
+
+components:
+  api: "anthropic"
+  model: "claude-3-5-sonnet-20241022"
+
+parameters:
+  temperature: 0.7
+  max_tokens: 4096
+  system_message: 
+    You are a helpful assistant that answers questions about Touch Rugby according to
+    FIT (Federation of International Touch) rules.
+    Provide clear, concise answers and always cite the specific rule number when
+    applicable.
+    If you're not sure about a specific rule, acknowledge the uncertainty and 
+    provide the most accurate information you can.
